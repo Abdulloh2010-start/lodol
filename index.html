@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Translate App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Translate App</h2>
+    <div class="textareas">
+      <textarea id="inputText" placeholder="Matnni kiriting..."></textarea>
+      <textarea id="outputText" placeholder="Tarjima natijasi..." readonly></textarea>
+    </div>
+    <div class="controls">
+      <select id="sourceLang"></select>
+      <select id="targetLang"></select>
+    </div>
+    <button onclick="translateText()">Tarjima qilish</button>
+    <button onclick="speakText()" style="margin-top: 10px;">🔊 Ovozli chiqarish</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
